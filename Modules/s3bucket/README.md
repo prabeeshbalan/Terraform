@@ -64,25 +64,25 @@ Version
 
 object
 
-../../modules/object
+../../modules/s3bucket/encryption
 
 n/a
 
 object_complete
 
-../../modules/object
+../../modules/s3bucket/lifecycle
 
 n/a
 
 object_locked
 
-../../modules/object
+../../modules/s3bucket/s3
 
 n/a
 
 object_with_override_default_tags
 
-../../modules/object
+../../modules/s3bucket/versioning
 
 n/a
 
@@ -98,17 +98,6 @@ s3_bucket_with_object_lock
 
 n/a
 
-Resources
-
-Name
-
-Type
-
-aws_kms_key.this
-
-resource
-
-random_pet.this
 
 resource
 

@@ -32,7 +32,7 @@ Note that this example may create resources which cost money. Run `terraform des
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="bucket-encryption"></a> [encryption](#module\_encryption) | ../../modules/s3bucket/encryption | n/a |
+| <a name="bucket-encryption"></a> [bucket\-encryption](#module\_encryption) | ../../modules/s3bucket/encryption | n/a |
 | <a name="bucket-lifecycle-config"></a> [object\_complete](#module\_object\_complete) | ../../modules/s3bucket/lifecycle | n/a |
 | <a name="s3-bucket"></a> [object\_locked](#module\_object\_locked) | ../../modules/s3bucket/s3 | n/a |
 | <a name="bucket-versioning"></a> [object\_with\_override\_default\_tags](#module\_object\_with\_override\_default\_tags) | ../../modules/s3bucket/versioning | n/a |

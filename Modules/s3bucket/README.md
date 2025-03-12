@@ -32,10 +32,10 @@ Note that this example may create resources which cost money. Run `terraform des
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_object"></a> [object](#module\_encryption) | ../../modules/s3bucket/encryption | n/a |
-| <a name="module_object_complete"></a> [object\_complete](#module\_object\_complete) | ../../modules/s3bucket/lifecycle | n/a |
-| <a name="module_object_locked"></a> [object\_locked](#module\_object\_locked) | ../../modules/s3bucket/s3 | n/a |
-| <a name="module_object_with_override_default_tags"></a> [object\_with\_override\_default\_tags](#module\_object\_with\_override\_default\_tags) | ../../modules/s3bucket/versioning | n/a |
+| <a name="bucket-encryption"></a> [object](#module\_encryption) | ../../modules/s3bucket/encryption | n/a |
+| <a name="bucket-lifecycle-config"></a> [object\_complete](#module\_object\_complete) | ../../modules/s3bucket/lifecycle | n/a |
+| <a name="s3-bucket"></a> [object\_locked](#module\_object\_locked) | ../../modules/s3bucket/s3 | n/a |
+| <a name="bucket-versioning"></a> [object\_with\_override\_default\_tags](#module\_object\_with\_override\_default\_tags) | ../../modules/s3bucket/versioning | n/a |
 
 
 ## Inputs

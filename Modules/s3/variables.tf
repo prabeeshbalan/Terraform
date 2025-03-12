@@ -4,7 +4,7 @@ variable "dev-aws-s3-bucket-name" {
   default     = "test-dev-aws-s3-bucket"
 }
 variable "dev-aws-s3-bucket-acl" {
-  description = "Name of the S3 bucket"
+  description = "s3 bucket ACL type"
   type        = string
   default     = "private"
 }

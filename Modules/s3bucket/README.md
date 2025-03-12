@@ -46,7 +46,7 @@ No inputs.
 
 | Name | Description |
 |------|-------------|
-| <a name="s3-bucket-name-output"></a> [s3\-bucket\-name\-output](#s3\-bucket\-name\-output) | The name of the bucket. |
+| <a name="s3-bucket-name-output"></a> [s3\-bucket\-name\-output](#s3\-bucket\-name\-output) | The name of the s3 bucket. |
 | <a name="s3-bucket-arn-output"></a> [s3\-bucket\-arn\-output](#s3\-bucket\-arn\-output) | The ARN of the bucket. Will be of format arn:aws:s3:::bucketname.|
 | <a name="s3-bucket-endpoint-output"></a> [s3\-bucket\-endpoint\-output](#s3\-bucket\-endpoint\-output) | The end point URL of the bucket. |
 | <a name="s3-bucket-url-output"></a> [s3\-bucket\-url\-output](#s3\-bucket\-url\-output) | Full HTTPS URL endpoint of the S3 bucket. |

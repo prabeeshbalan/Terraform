@@ -1,112 +1,53 @@
-AWS S3 Bucket Terraform Module
+# S3 bucket object
 
-Overview
+Configuration in this directory creates S3 bucket objects with different configurations.
 
-This Terraform configuration creates an AWS S3 bucket with a minimal configuration and supports S3 bucket objects with different configurations.
+## Usage
 
-Prerequisites
+To run this example you need to execute:
 
-Terraform installed (>= 1.0)
+```bash
+$ terraform init
+$ terraform plan
+$ terraform apply
+```
 
-AWS CLI installed and configured with appropriate credentials
+Note that this example may create resources which cost money. Run `terraform destroy` when you don't need these resources.
 
-A globally unique bucket name
+<!-- BEGIN_TF_DOCS -->
+## Requirements
 
-Usage
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.83 |
 
-1. Initialize Terraform
+## Providers
 
-Run the following command to initialize the Terraform workspace:
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.83 |
 
-terraform init
+## Modules
 
-2. Plan the Deployment
-
-Preview the resources that Terraform will create:
-
-terraform plan
-
-3. Apply the Configuration
-
-Create the S3 bucket and objects by running:
-
-terraform apply
-
-Type yes when prompted.
-
-4. View the Output
-
-After successful deployment, Terraform will output the bucket and object details:
-
-terraform output s3_bucket_arn
-terraform output s3_bucket_id
-terraform output s3_object_etag
-terraform output s3_object_id
-terraform output s3_object_version_id
-
-5. Cleanup
-
-To destroy the created resources, run:
-
-terraform destroy
-
-Type yes when prompted.
-
-Configuration Details
-
-Modules
-
-Name
-
-Source
-
-Version
-
-object
-
-../../modules/s3bucket/encryption
-
-n/a
-
-object_complete
-
-../../modules/s3bucket/lifecycle
-
-n/a
-
-object_locked
-
-../../modules/s3bucket/s3
-
-n/a
-
-object_with_override_default_tags
-
-../../modules/s3bucket/versioning
-
-n/a
-
-s3_bucket
-
-../../
-
-n/a
-
-s3_bucket_with_object_lock
-
-../../
-
-n/a
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_object"></a> [object](#module\_object) | ../../modules/s3bucket/encryption | n/a |
+| <a name="module_object_complete"></a> [object\_complete](#module\_object\_complete) | ../../modules/s3bucket/lifecycle | n/a |
+| <a name="module_object_locked"></a> [object\_locked](#module\_object\_locked) | ../../modules/s3bucket/s3 | n/a |
+| <a name="module_object_with_override_default_tags"></a> [object\_with\_override\_default\_tags](#module\_object\_with\_override\_default\_tags) | ../../modules/s3bucket/versioning | n/a |
 
 
-resource
+## Inputs
 
-Notes
+No inputs.
 
-The bucket name must be globally unique.
+## Outputs
 
-Modify the provider block to specify a different AWS region if needed.
-
-Ensure that your AWS IAM user has s3:CreateBucket permission.
-
-This example may create resources that cost money. Run terraform destroy when you no longer need them.
+| Name | Description |
+|------|-------------|
+| <a name="s3-bucket-name-output"></a> [s3\_bucket\_arn](#output\_s3\_bucket\_arn) | The ARN of the bucket. Will be of format arn:aws:s3:::bucketname. |
+| <a name="s3-bucket-arn-output"></a> [s3\_bucket\_id](#output\_s3\_bucket\_id) | The name of the bucket. |
+| <a name="s3-bucket-endpoint-output"></a> [s3\_object\_etag](#output\_s3\_object\_etag) | The ETag generated for the object (an MD5 sum of the object content). |
+| <a name="s3-bucket-url-output"></a> [s3\_object\_id](#output\_s3\_object\_id) | The key of S3 object |
+<!-- END_TF_DOCS -->

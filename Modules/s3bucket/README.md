@@ -46,8 +46,8 @@ No inputs.
 
 | Name | Description |
 |------|-------------|
-| <a name="s3-bucket-name-output"></a> [s3\_bucket\_id](#output\_s3\_bucket\_id) | The name of the bucket. |
-| <a name="s3-bucket-arn-output"></a> [s3\_bucket\_arn](#output\_s3\_bucket\_arn) | The ARN of the bucket. Will be of format arn:aws:s3:::bucketname.|
-| <a name="s3-bucket-endpoint-output"></a> [s3\_object\_etag](#output\_s3\_object\_etag) | The ETag generated for the object (an MD5 sum of the object content). |
-| <a name="s3-bucket-url-output"></a> [s3\_object\_id](#output\_s3\_object\_id) | The key of S3 object |
+| <a name="s3-bucket-name-output"></a> [s3\-bucket\-name\-output](#s3\-bucket\-name\-output) | The name of the bucket. |
+| <a name="s3-bucket-arn-output"></a> [s3\-bucket\-arn\-output](#s3\-bucket\-arn\-output) | The ARN of the bucket. Will be of format arn:aws:s3:::bucketname.|
+| <a name="s3-bucket-endpoint-output"></a> [s3\-bucket\-endpoint\-output](#s3\-bucket\-endpoint\-output) | The ETag generated for the object (an MD5 sum of the object content). |
+| <a name="s3-bucket-url-output"></a> [s3\-bucket\-url\-output](#s3\-bucket\-url\-output) | The key of S3 object |
 <!-- END_TF_DOCS -->
